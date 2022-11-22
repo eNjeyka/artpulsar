@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="src/favicon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="script.js" defer></script>
+        <title>Artpulsar</title>
+    </head>
+    <body>
+        <section id="home">
+            <div id="test">
+                <img src="src/IMG_0500.jpg" hidden alt="" />
+                <img src="src/IMG_0798.jpg" hidden alt="" />
+                <img src="src/IMG_0964.jpg" hidden alt="" />
+            </div>
+            <div class="card" data-aos="zoom-in">
+                <div class="my-name">
+                    <span class="blast" data-aos="fade-left" data-aos-delay="200">A</span>
+                    <span class="blast" data-aos="fade-left" data-aos-delay="300">r</span>
+                    <span class="blast" data-aos="fade-left" data-aos-delay="400">t</span>
+                    <span class="blast" data-aos="fade-left" data-aos-delay="500">p</span>
+                    <span class="blast" data-aos="fade-left" data-aos-delay="600">u</span>
+                    <span class="blast" data-aos="fade-left" data-aos-delay="700">l</span>
+                    <span class="blast" data-aos="fade-left" data-aos-delay="800">s</span>
+                    <span class="blast" data-aos="fade-left" data-aos-delay="900">a</span>
+                    <span class="blast" data-aos="fade-left" data-aos-delay="1000">r</span>
+                </div>
+                <div class="nav-sections">
+                    <a href="#portfolio" class="txt-button blast" id="" data-aos="fade-left" data-aos-delay="300">Portfolio</a>
+                    <a href="#about" class="txt-button blast" id="" data-aos="fade-left" data-aos-delay="600">About Me</a>
+                    <a href="#contact" class="txt-button blast" id="" data-aos="fade-left" data-aos-delay="1000">Contact Me</a>
+                </div>
+                <div class="links" id="links">
+                    <i class="fab fa-instagram blast" data-aos="fade-left" data-aos-delay="200"></i>
+                    <i class="fab fa-youtube blast" data-aos="fade-left" data-aos-delay="400"></i>
+                    <i class="fab fa-telegram blast" data-aos="fade-left" data-aos-delay="600"></i>
+                    <i class="fab fa-twitter blast" data-aos="fade-left" data-aos-delay="800"></i>
+                    <i class="fab fa-facebook blast" data-aos="fade-left" data-aos-delay="1000"></i>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="container" data-aos="fade-up">
+                <div class="panel active" style="background-image: url('src/IMG_0718.jpg')"></div>
+                <div class="panel" style="background-image: url('src/IMG_0851.jpg')"></div>
+                <div class="panel" style="background-image: url('src/IMG_0128.jpg')"></div>
+                <div class="panel" style="background-image: url('src/IMG_0926.jpg')"></div>
+                <div class="panel" style="background-image: url('src/IMG_0076.jpg')"></div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-container">
+                <div class="img-container" data-aos="flip-left" data-aos-delay="200"><img src="src/avatar.jpg" alt="" /></div>
+                <div class="about-filler" data-aos="fade-left" data-aos-delay="600">My nickname is ArtPulsar and I was trying to find a way how to capture moments which I experience in my life. I have found it in photography.</div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Some content will be here as well. :)</h1>
+        </section>
+    </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 200,
+            duration: 1500,
+            once: false,
+            mirror: false,
+        });
+    </script>
+</html>
