@@ -10,7 +10,7 @@ body {
     background-image: url("src/IMG_0964.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: 60% 80%;
     transition: background-image 2s ease;
     position: relative;
     display: flex;
@@ -190,31 +190,29 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .about-container {
     display: flex;
-    width: 80vw;
+    flex-direction: row;
+    height: 80%;
+    width: 80%;
 }
 
-.img-container {
-}
-
-.img-container img {
-    width: 480px;
-    height: 700px;
+.about-img {
     border-radius: 10px;
+    width: 50%;
     box-shadow: 2px 2px 7px rgba(255, 255, 255, 0.3);
 }
 
 .about-filler {
     font-size: 2rem;
     padding: 20px;
-    width: 60%;
-    justify-content: center;
-    text-align: center;
     display: flex;
+    justify-content: center;
     align-items: center;
+    
 }
 
 /* more photos */
