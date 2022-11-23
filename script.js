@@ -41,3 +41,22 @@ function changeBackgroundImage() {
 }
 
 setInterval(changeBackgroundImage, 5000)
+
+// more photos 
+const container = document.querySelector('.container-more-photos')
+const unsplashURL = 'https://source.unsplash.com/random/'
+const rows = 4
+
+for(let i = 0; i < rows * 8; i++) {
+    const img = document.createElement('img')
+    img.src = `${unsplashURL}${getRandomSize()}`
+    container.appendChild(img)
+}
+
+function getRandomSize() {
+    return `${getRandomNr()}x${getRandomNr()}`
+}
+
+function getRandomNr() {
+    return Math.floor(Math.random() * 20) + 180
+}
