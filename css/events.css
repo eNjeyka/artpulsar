@@ -1,0 +1,9 @@
+.events {
+    align-items: center;
+    height: 100vh;
+}
+
+.events-title {
+    color: white;
+    font-size: 3rem;
+}

@@ -2,66 +2,77 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/png" href="src/favicon.png" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-        <link rel="stylesheet" href="styles.css" />
+        <title>ArtPulsar</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/home.css" />
+        <link rel="stylesheet" href="css/about.css" />
+        <link rel="stylesheet" href="css/events.css" />
+        <link rel="stylesheet" href="css/more-photos.css" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-        <script src="script.js" defer></script>
-        <title>Artpulsar</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+        <script src="js/script.js" defer></script>
+        <script src="js/home.js" defer></script>
+        <script src="js/about.js" defer></script>
+        <script src="js/more-photos.js" defer></script>
     </head>
     <body>
-        <section id="home">
-            <div class="image-container" id="imgs">
-                <img src="src/IMG_0500.jpg" hidden alt="" />
-                <img src="src/IMG_0798.jpg" hidden alt="" />
-                <img src="src/IMG_0964.jpg" hidden alt="" />
-            </div>
-            <div class="card" data-aos="zoom-in">
-                <div class="my-name">
-                    <span class="blast" data-aos="fade-left" data-aos-delay="200">A</span>
-                    <span class="blast" data-aos="fade-left" data-aos-delay="300">r</span>
-                    <span class="blast" data-aos="fade-left" data-aos-delay="400">t</span>
-                    <span class="blast" data-aos="fade-left" data-aos-delay="500">p</span>
-                    <span class="blast" data-aos="fade-left" data-aos-delay="600">u</span>
-                    <span class="blast" data-aos="fade-left" data-aos-delay="700">l</span>
-                    <span class="blast" data-aos="fade-left" data-aos-delay="800">s</span>
-                    <span class="blast" data-aos="fade-left" data-aos-delay="900">a</span>
-                    <span class="blast" data-aos="fade-left" data-aos-delay="1000">r</span>
+        <a href="#home" class="scroll-up-button" id="scroll-up-button" hidden><i class="fa-solid fa-arrow-up"></i></a>
+        <div class="main-container">
+            <section class="home" id="home">
+                <div class="home-background">
+                    <img src="src/home-backgrounds/bg-1.jpg" hidden alt="" />
+                    <img src="src/home-backgrounds/bg-2.jpg" hidden alt="" />
+                    <img src="src/home-backgrounds/bg-3.jpg" hidden alt="" />
                 </div>
-                <div class="nav-sections">
-                    <a href="#portfolio" class="txt-button blast" id="" data-aos="fade-left" data-aos-delay="300">Portfolio</a>
-                    <a href="#about" class="txt-button blast" id="" data-aos="fade-left" data-aos-delay="600">About Me</a>
-                    <a href="#more-photos" class="txt-button blast" id="" data-aos="fade-left" data-aos-delay="1000">More Photos</a>
+                <div class="home-card" data-aos="zoom-in">
+                    <div class="home-title">
+                        <span class="blast" data-aos="fade-left" data-aos-delay="200">A</span>
+                        <span class="blast" data-aos="fade-left" data-aos-delay="300">r</span>
+                        <span class="blast" data-aos="fade-left" data-aos-delay="400">t</span>
+                        <span class="blast" data-aos="fade-left" data-aos-delay="500">p</span>
+                        <span class="blast" data-aos="fade-left" data-aos-delay="600">u</span>
+                        <span class="blast" data-aos="fade-left" data-aos-delay="700">l</span>
+                        <span class="blast" data-aos="fade-left" data-aos-delay="800">s</span>
+                        <span class="blast" data-aos="fade-left" data-aos-delay="900">a</span>
+                        <span class="blast" data-aos="fade-left" data-aos-delay="1000">r</span>
+                    </div>
+                    <div class="home-nav">
+                        <a href="#events" class="home-nav-elem blast" data-aos="fade-left" data-aos-delay="300">Events</a>
+                        <a href="#about" class="home-nav-elem blast" data-aos="fade-left" data-aos-delay="600">About Me</a>
+                        <a href="#more-photos" class="home-nav-elem blast" data-aos="fade-left" data-aos-delay="1000">More Photos</a>
+                    </div>
+                    <div class="home-links">
+                        <a href="" class="" data-aos="fade-left" data-aos-delay="200"><i class="fab fa-facebook blast"></i></a>
+                        <a href="" class="" data-aos="fade-left" data-aos-delay="400"><i class="fab fa-twitter blast"></i></a>
+                        <a href="" class="" data-aos="fade-left" data-aos-delay="600"><i class="fab fa-telegram blast"></i></a>
+                        <a href="" class="" data-aos="fade-left" data-aos-delay="800"><i class="fab fa-steam blast"></i></a>
+                        <a href="" class="" data-aos="fade-left" data-aos-delay="1000"><i class="fab fa-instagram blast"></i></a>
+                    </div>
                 </div>
-                <div class="links" id="links">
-                    <i class="fab fa-instagram blast" data-aos="fade-left" data-aos-delay="200"></i>
-                    <i class="fab fa-youtube blast" data-aos="fade-left" data-aos-delay="400"></i>
-                    <i class="fab fa-telegram blast" data-aos="fade-left" data-aos-delay="600"></i>
-                    <i class="fab fa-twitter blast" data-aos="fade-left" data-aos-delay="800"></i>
-                    <i class="fab fa-facebook blast" data-aos="fade-left" data-aos-delay="1000"></i>
+            </section>
+            <section id="events" class="events">
+                <h1 class="events-title" data-aos="zoom-in">Events...</h1>
+            </section>
+            <section class="about" id="about">
+                <div class="about-background"></div>
+                <div class="about-card" data-aos="zoom-in">
+                    <div class="about-title">About me</div>
+                    <div class="about-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, obcaecati veritatis neque error voluptates perspiciatis earum, totam accusamus incidunt quasi quam itaque similique eum illum cum temporibus quae fugiat, voluptatum maxime corrupti nesciunt harum tenetur
+                        expedita quo. Perferendis, maxime autem!
+                    </div>
+                    <div class="about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium doloribus aliquid ratione id nobis optio. Eaque cum ipsa necessitatibus distinctio.</div>
                 </div>
-            </div>
-        </section>
-        <section id="portfolio">
-            <div class="container" data-aos="fade-up">
-                <div class="panel active" style="background-image: url('src/IMG_0718.jpg')"></div>
-                <div class="panel" style="background-image: url('src/IMG_0851.jpg')"></div>
-                <div class="panel" style="background-image: url('src/IMG_0128.jpg')"></div>
-                <div class="panel" style="background-image: url('src/IMG_0926.jpg')"></div>
-                <div class="panel" style="background-image: url('src/IMG_0076.jpg')"></div>
-            </div>
-        </section>
-        <section id="about">
-            <div class="about-container">
-                <img class="about-img" src="src/avatar.jpg" data-aos="flip-left" data-aos-delay="200" alt="" />
-                <div class="about-filler" data-aos="fade-left" data-aos-delay="600">My name is Giorgio and I was trying to find a way how to capture moments which I experience in my life. I have found it in photography.</div>
-            </div>
-        </section>
-        <section id="more-photos">
-            <div class="container-more-photos"></div>
-        </section>
+            </section>
+
+            <section class="more-photos" id="more-photos">
+                <div class="more-photos-container">
+                    <h1 class="more-photos-title" data-aos="zoom-in">More of my works...</h1>
+                    <div class="image-container" id="image-container"></div>
+                </div>
+            </section>
+        </div>
     </body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
